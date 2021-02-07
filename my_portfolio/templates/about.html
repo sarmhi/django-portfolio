@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block aboutactive %}active{% endblock %}
+{% block title %}About{% endblock %}
+
+{% block body %}
+<div class="container my-3">
+  <h1 class="text-center">About Me</h1>
+  <div class="jumbotron">
+    <p>
+      I am a person who puts family first in all he does, I am developing my love for codes, trying to understand them, and I hope you can see that in my projects.
+    </p>
+
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static "img/developer.jpg" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Developer</h5>
+          <p class="card-text">My love for code expressed in different forms.</p>
+          <a href="#" class="btn btn-primary">Developed Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static "img/animations2.jpg" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Animations</h5>
+          <p class="card-text">Animations gives me a different look to life and I would love to show you all.</p>
+          <a href="#" class="btn btn-primary">Anime Reviews</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static "img/sports2.jpg" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sports</h5>
+          <p class="card-text">Patterns, practice, pace and all you can think of regarding sports.</p>
+          <a href="#" class="btn btn-primary">Sports Articles</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block postion %}position-absolute{% endblock %}
